@@ -1,0 +1,13 @@
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\obj\Debug\netcoreapp2.0\Quotation.Domain.csprojResolveAssemblyReference.cache
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\obj\Debug\netcoreapp2.0\Quotation.Domain.csproj.CoreCompileInputs.cache
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\obj\Debug\netcoreapp2.0\Quotation.Domain.AssemblyInfoInputs.cache
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\obj\Debug\netcoreapp2.0\Quotation.Domain.AssemblyInfo.cs
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\bin\Debug\netcoreapp2.0\Quotation.Domain.deps.json
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\bin\Debug\netcoreapp2.0\Quotation.Domain.runtimeconfig.json
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\bin\Debug\netcoreapp2.0\Quotation.Domain.runtimeconfig.dev.json
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\bin\Debug\netcoreapp2.0\Quotation.Domain.dll
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\bin\Debug\netcoreapp2.0\Quotation.Domain.pdb
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\bin\Debug\netcoreapp2.0\Quotation.Infrastructure.dll
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\bin\Debug\netcoreapp2.0\Quotation.Infrastructure.pdb
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\obj\Debug\netcoreapp2.0\Quotation.Domain.dll
+C:\works\projetos\dotnet\quotationApi\Quotation.Domain\obj\Debug\netcoreapp2.0\Quotation.Domain.pdb
