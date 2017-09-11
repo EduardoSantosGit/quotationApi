@@ -1,10 +1,10 @@
-﻿using System;
+﻿using Services.markets.WorldMarkets.Domain.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using WorldMarkets.Domain.Models;
 
-namespace WorldMarkets.Domain.Services
+namespace Services.markets.WorldMarkets.Domain.Services
 {
     public class WorldMarketsService
     {

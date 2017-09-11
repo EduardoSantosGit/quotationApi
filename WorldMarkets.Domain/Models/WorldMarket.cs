@@ -1,4 +1,4 @@
-﻿namespace WorldMarkets.Domain.Models
+﻿namespace Services.markets.WorldMarkets.Domain.Models
 {
     public class WorldMarket
     {

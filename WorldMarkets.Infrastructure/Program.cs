@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WorldMarkets.Infrastructure
+namespace Services.markets.WorldMarkets.Infrastructure
 {
     class Program
     {

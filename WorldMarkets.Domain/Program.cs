@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WorldMarkets.Domain
+namespace Services.markets.WorldMarkets.Domain
 {
     class Program
     {

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Services.markets.WorldMarkets.Domain.Services;
 using System.Threading.Tasks;
-using WorldMarkets.Domain.Services;
 
-namespace WorldMarkets.Api.Controllers
+namespace Services.markets.WorldMarkets.Api.Controllers
 {
     [Route("api/v1/markets/")]
     public class WorldMarketsController : Controller

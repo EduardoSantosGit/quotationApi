@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Services.markets.WorldMarkets.Domain.Models;
+using Services.markets.WorldMarkets.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
-using WorldMarkets.Domain.Models;
-using WorldMarkets.Infrastructure;
 
-namespace WorldMarkets.Domain.Services
+namespace Services.markets.WorldMarkets.Domain.Services
 {
     public class WorldMarketsServiceScrap
     {

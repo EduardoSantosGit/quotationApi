@@ -1,4 +1,4 @@
-﻿namespace WorldMarkets.Domain.Services
+﻿namespace Services.markets.WorldMarkets.Domain.Services
 {
     public class ScrapService
     {

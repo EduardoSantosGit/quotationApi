@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace WorldMarkets.Api
+namespace Services.markets.WorldMarkets.Api
 {
     public class Startup
     {
