@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Quotation.Infrastructure
+namespace Services.quotation.Quotation.Infrastructure
 {
     class Program
     {

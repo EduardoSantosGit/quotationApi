@@ -1,10 +1,10 @@
-﻿using Quotation.Domain.Models;
+﻿using Services.quotation.Quotation.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Quotation.Domain.Services
+namespace Services.quotation.Quotation.Domain.Services
 {
     public class QuotationService
     {

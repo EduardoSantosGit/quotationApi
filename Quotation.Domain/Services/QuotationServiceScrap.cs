@@ -1,10 +1,11 @@
-﻿using Quotation.Infrastructure.Services;
+﻿using Services.quotation.Quotation.Domain.Services;
+using Services.quotation.Quotation.Infrastructure.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Quotation.Domain.Services
+namespace Services.quotation.Quotation.Domain.Services
 {
     public class QuotationServiceScrap
     {

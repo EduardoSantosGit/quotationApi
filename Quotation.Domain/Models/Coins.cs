@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Quotation.Domain.Models
+namespace Services.quotation.Quotation.Domain.Models
 {
     public class Coins
     {

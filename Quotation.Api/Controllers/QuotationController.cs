@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Quotation.Domain.Services;
 
-namespace Quotation.Api.Controllers
+namespace Services.quotation.Quotation.Api.Controllers
 {
     [Route("api/v1/quotation/")]
     public class QuotationController : Controller

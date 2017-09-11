@@ -1,4 +1,4 @@
-﻿namespace Quotation.Domain.Services
+﻿namespace Services.quotation.Quotation.Domain.Services
 {
     public class ScrapService
     {

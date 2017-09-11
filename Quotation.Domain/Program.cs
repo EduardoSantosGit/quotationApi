@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Quotation.Domain
+namespace Services.quotation.Quotation.Domain
 {
     class Program
     {

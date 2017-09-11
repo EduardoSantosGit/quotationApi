@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Quotation.Infrastructure.Services
+namespace Services.quotation.Quotation.Infrastructure.Services
 {
     public class QuotationServicesApi
     {
