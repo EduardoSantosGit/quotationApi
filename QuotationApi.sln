@@ -11,17 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "quotation", "quotation", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "markets", "markets", "{03245E59-E698-4C8B-88E8-84B8DA2FE38F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldMarkets.Domain", "WorldMarkets.Domain\WorldMarkets.Domain.csproj", "{0BA413D1-34BA-4E9A-879D-C1DA40DEBB1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldMarkets.Domain", "src\Services\markets\WorldMarkets.Domain\WorldMarkets.Domain.csproj", "{0BA413D1-34BA-4E9A-879D-C1DA40DEBB1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldMarkets.Infrastructure", "WorldMarkets.Infrastructure\WorldMarkets.Infrastructure.csproj", "{CAE5B033-9BA7-4EC4-B8EE-83316735E105}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldMarkets.Infrastructure", "src\Services\markets\WorldMarkets.Infrastructure\WorldMarkets.Infrastructure.csproj", "{CAE5B033-9BA7-4EC4-B8EE-83316735E105}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldMarkets.Api", "WorldMarkets.Api\WorldMarkets.Api.csproj", "{06D62EB5-C04F-44F7-8DAF-D4B9F9E24169}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldMarkets.Api", "src\Services\markets\WorldMarkets.Api\WorldMarkets.Api.csproj", "{06D62EB5-C04F-44F7-8DAF-D4B9F9E24169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Api", "Quotation.Api\Quotation.Api.csproj", "{E26FD727-D663-4B58-BD72-15AE358B5493}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Api", "src\Services\quotation\Quotation.Api\Quotation.Api.csproj", "{E26FD727-D663-4B58-BD72-15AE358B5493}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Domain", "Quotation.Domain\Quotation.Domain.csproj", "{2408737A-CAFF-4009-9A7F-7741AE9E0D3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Domain", "src\Services\quotation\Quotation.Domain\Quotation.Domain.csproj", "{2408737A-CAFF-4009-9A7F-7741AE9E0D3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Infrastructure", "Quotation.Infrastructure\Quotation.Infrastructure.csproj", "{81C76574-D278-4CB3-BF1A-D3F3D9726D53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quotation.Infrastructure", "src\Services\quotation\Quotation.Infrastructure\Quotation.Infrastructure.csproj", "{81C76574-D278-4CB3-BF1A-D3F3D9726D53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
