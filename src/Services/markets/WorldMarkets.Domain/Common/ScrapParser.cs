@@ -1,6 +1,6 @@
-﻿namespace Services.markets.WorldMarkets.Domain.Services
+﻿namespace Services.markets.WorldMarkets.Domain.Common
 {
-    public class ScrapService
+    public class ScrapParser
     {
 
         public string ScrapBlockPage(string html, string indexOn, string indexLast)

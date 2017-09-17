@@ -1,4 +1,5 @@
-﻿using Services.quotation.Quotation.Domain.Services;
+﻿using Services.quotation.Quotation.Domain.Common;
+using Services.quotation.Quotation.Domain.Services;
 using Services.quotation.Quotation.Infrastructure.Services;
 using System;
 using System.Collections.Generic;
@@ -9,12 +10,12 @@ namespace Services.quotation.Quotation.Domain.Services
 {
     public class QuotationServiceScrap
     {
-        private readonly ScrapService _scrapService;
+        private readonly ScrapParser _scrapParser;
         private QuotationServicesApi _quotationServicesApi;
 
         public QuotationServiceScrap()
         {
-            _scrapService = new ScrapService();
+            _scrapParser = new ScrapParser();
         }
 
         public async Task<string> GetScrapCoins()
@@ -23,10 +24,10 @@ namespace Services.quotation.Quotation.Domain.Services
             var html = await _quotationServicesApi.GetPageIndex();
 
             var blockQuotation =
-                _scrapService.ScrapBlockPage(html, "abril_exame_cotacoes_widget-48", "abrAD_button1");
+                _scrapParser.ScrapBlockPage(html, "abril_exame_cotacoes_widget-48", "abrAD_button1");
 
             var blockValuesQuotation =
-                _scrapService.ScrapBlockPage(blockQuotation, "<div class=\"exchange-container\">",
+                _scrapParser.ScrapBlockPage(blockQuotation, "<div class=\"exchange-container\">",
                     "<div class=\"bvsp\">"
             );
 
@@ -35,11 +36,11 @@ namespace Services.quotation.Quotation.Domain.Services
 
         public string GetValueDolar(string block)
         {
-            var blockDolar = _scrapService.ScrapBlockPage(
+            var blockDolar = _scrapParser.ScrapBlockPage(
                 block, "<div class=\"exchange exchange-usd\">",
                 "</div>");
 
-            var value = _scrapService.ScrapBlockPage(
+            var value = _scrapParser.ScrapBlockPage(
                 blockDolar, "<span class=\"value\">",
                 "</span>");
 
@@ -48,11 +49,11 @@ namespace Services.quotation.Quotation.Domain.Services
 
         public string GetValueEuro(string block)
         {
-            var blockEuro = _scrapService.ScrapBlockPage(
+            var blockEuro = _scrapParser.ScrapBlockPage(
                 block, "<div class=\"exchange exchange-eur\">",
                 "<div class=\"exchange exchange-selic\">");
 
-            var value = _scrapService.ScrapBlockPage(
+            var value = _scrapParser.ScrapBlockPage(
                 blockEuro, "<span class=\"value\">",
                 "</span>");
 

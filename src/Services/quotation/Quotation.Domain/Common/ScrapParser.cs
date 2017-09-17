@@ -1,6 +1,6 @@
-﻿namespace Services.quotation.Quotation.Domain.Services
+﻿namespace Services.quotation.Quotation.Domain.Common
 {
-    public class ScrapService
+    public class ScrapParser
     {
 
         public string ScrapBlockPage(string html, string indexOn, string indexLast)
