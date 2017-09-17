@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Quotation.Domain.Services;
+using Services.quotation.Quotation.Domain.Services;
 
 namespace Services.quotation.Quotation.Api.Controllers
 {

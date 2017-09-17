@@ -51,7 +51,13 @@ namespace Services.markets.WorldMarkets.Domain.Services
                 blockIbovespa, "</span><br>Hora ",
                 "</td>\n\t\t</tr>\n\t\t<tr><td colspan=\"2\"><a href=\"p.php?pid=exame_quote&symbol=BOV^IBOV\">");
 
-            worldMarket.Parents = "Brasil";
+            worldMarket.Parents = _scrapParser.ScrapBlockPage(
+                blockIbovespa, "\"IBOV\">",
+                "</a></span><span class=\"name\"><a href=\"p.php?pid=exame_quote&symbol=BOV^IBOV\">");
+
+            worldMarket.Variation = _scrapParser.ScrapBlockPage(
+                blockIbovespa, "<td class=\"info_perc\"><span class='value_up'>",
+                "</span><br>");
 
             lstWorldMarket.Add(worldMarket);
 

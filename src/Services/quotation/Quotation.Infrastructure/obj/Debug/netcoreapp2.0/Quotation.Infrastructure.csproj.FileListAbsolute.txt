@@ -9,3 +9,14 @@ C:\works\projetos\dotnet\quotationApi\Quotation.Infrastructure\obj\Debug\netcore
 C:\works\projetos\dotnet\quotationApi\Quotation.Infrastructure\obj\Debug\netcoreapp2.0\Quotation.Infrastructure.AssemblyInfo.cs
 C:\works\projetos\dotnet\quotationApi\Quotation.Infrastructure\obj\Debug\netcoreapp2.0\Quotation.Infrastructure.dll
 C:\works\projetos\dotnet\quotationApi\Quotation.Infrastructure\obj\Debug\netcoreapp2.0\Quotation.Infrastructure.pdb
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\bin\Debug\netcoreapp2.0\Quotation.Infrastructure.deps.json
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\bin\Debug\netcoreapp2.0\Quotation.Infrastructure.runtimeconfig.json
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\bin\Debug\netcoreapp2.0\Quotation.Infrastructure.runtimeconfig.dev.json
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\bin\Debug\netcoreapp2.0\Quotation.Infrastructure.dll
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\bin\Debug\netcoreapp2.0\Quotation.Infrastructure.pdb
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\obj\Debug\netcoreapp2.0\Quotation.Infrastructure.csprojResolveAssemblyReference.cache
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\obj\Debug\netcoreapp2.0\Quotation.Infrastructure.csproj.CoreCompileInputs.cache
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\obj\Debug\netcoreapp2.0\Quotation.Infrastructure.AssemblyInfoInputs.cache
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\obj\Debug\netcoreapp2.0\Quotation.Infrastructure.AssemblyInfo.cs
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\obj\Debug\netcoreapp2.0\Quotation.Infrastructure.dll
+C:\works\projetos\dotnet\quotationApi\src\Services\quotation\Quotation.Infrastructure\obj\Debug\netcoreapp2.0\Quotation.Infrastructure.pdb

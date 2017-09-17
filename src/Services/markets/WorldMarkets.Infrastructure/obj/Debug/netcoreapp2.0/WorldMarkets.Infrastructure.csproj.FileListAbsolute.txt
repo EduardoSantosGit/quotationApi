@@ -9,3 +9,14 @@ C:\works\projetos\dotnet\quotationApi\WorldMarkets.Infrastructure\obj\Debug\netc
 C:\works\projetos\dotnet\quotationApi\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.AssemblyInfo.cs
 C:\works\projetos\dotnet\quotationApi\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.dll
 C:\works\projetos\dotnet\quotationApi\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.pdb
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\bin\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.deps.json
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\bin\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.runtimeconfig.json
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\bin\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.runtimeconfig.dev.json
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\bin\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.dll
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\bin\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.pdb
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.csprojResolveAssemblyReference.cache
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.csproj.CoreCompileInputs.cache
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.AssemblyInfoInputs.cache
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.AssemblyInfo.cs
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.dll
+C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.pdb
