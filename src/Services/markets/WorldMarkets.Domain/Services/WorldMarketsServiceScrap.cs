@@ -12,10 +12,14 @@ namespace Services.markets.WorldMarkets.Domain.Services
     {
         private readonly ScrapParser _scrapParser;
         private WorldMarketServicesApi _worldMarketServicesApi;
+        private readonly List<string> _abbreviation;
 
         public WorldMarketsServiceScrap()
         {
             _scrapParser = new ScrapParser();
+            _abbreviation = new List<string>(new string[] {
+                "BOV^IBOV", "DJI^I\\DJI", "NI^I\\COMP", "FT^UKX", "DBI^DAX",
+            "EU^PX1", "EU^N100", "BITI^FTSEMIB", "NIK^N225"});
         }
 
         public async Task<string> GetScrapWorldMarket()
@@ -33,34 +37,53 @@ namespace Services.markets.WorldMarkets.Domain.Services
         public List<WorldMarket> GetValuesIndexParents(string block)
         {
             var lstWorldMarket = new List<WorldMarket>();
-            var worldMarket = new WorldMarket();
+           
 
-            var blockIbovespa = _scrapParser.ScrapBlockPage(
-                block, "<tr><th colspan=\"2\" class=\"height\"><span class=\"main_title\"><a href=\"p.php?pid=exame_quote&symbol=BOV^",
-                "<th colspan=\"2\" class=\"height\"><span class=\"main_title\"><a href=\"p.php?pid=exame_quote&symbol=DJI");
+            var blockMarkets = "";
 
-            worldMarket.Point = _scrapParser.ScrapBlockPage(
-                blockIbovespa, "<td><span>Pontos</span> <span><big>",
-                "</big></span></td>");
+            for (var i = 0; i < _abbreviation.Count; i++)
+            {
+                var worldMarket = new WorldMarket();
 
-            worldMarket.Index = _scrapParser.ScrapBlockPage(
-                blockIbovespa, "</a></span><span class=\"name\"><a href=\"p.php?pid=exame_quote&symbol=BOV^IBOV\">",
-                "</a></span></th>	</tr>");
+                if (i == _abbreviation.Count - 1)
+                {
+                    blockMarkets = _scrapParser.ScrapBlockPage(
+                        block, $"<tr><th colspan=\"2\" class=\"height\"><span class=\"main_title\"><a href=\"p.php?pid=exame_quote&symbol={_abbreviation[i]}",
+                        "<span class=\"by\"><a class=\"color_black font_bold\" href=\"http://br.advfn.com\">Cotações e Gráficos fornecidos por ");
+                }
+                else
+                {
+                    blockMarkets = _scrapParser.ScrapBlockPage(
+                        block, $"<tr><th colspan=\"2\" class=\"height\"><span class=\"main_title\"><a href=\"p.php?pid=exame_quote&symbol={_abbreviation[i]}",
+                        $"<th colspan=\"2\" class=\"height\"><span class=\"main_title\"><a href=\"p.php?pid=exame_quote&symbol={_abbreviation[i + 1]}");
+                }
 
-            worldMarket.Hour = _scrapParser.ScrapBlockPage(
-                blockIbovespa, "</span><br>Hora ",
-                "</td>\n\t\t</tr>\n\t\t<tr><td colspan=\"2\"><a href=\"p.php?pid=exame_quote&symbol=BOV^IBOV\">");
+                worldMarket.Point = _scrapParser.ScrapBlockPage(
+                    blockMarkets, "<td><span>Pontos</span> <span><big>",
+                    "</big></span></td>");
 
-            worldMarket.Parents = _scrapParser.ScrapBlockPage(
-                blockIbovespa, "\"IBOV\">",
-                "</a></span><span class=\"name\"><a href=\"p.php?pid=exame_quote&symbol=BOV^IBOV\">");
+                worldMarket.Index = _scrapParser.ScrapBlockPage(
+                    blockMarkets, $"</a></span><span class=\"name\"><a href=\"p.php?pid=exame_quote&symbol={_abbreviation[i]}\">",
+                    "</a></span></th>	</tr>");
 
-            worldMarket.Variation = _scrapParser.ScrapBlockPage(
-                blockIbovespa, "<td class=\"info_perc\"><span class='value_up'>",
-                "</span><br>");
+                worldMarket.Hour = _scrapParser.ScrapBlockPage(
+                    blockMarkets, "</span><br>Hora ",
+                    $"</td>\n\t\t</tr>\n\t\t<tr><td colspan=\"2\"><a href=\"p.php?pid=exame_quote&symbol={_abbreviation[i]}\">");
 
-            lstWorldMarket.Add(worldMarket);
+                worldMarket.Parents = _scrapParser.ScrapBlockPage(
+                    blockMarkets, "\"\">",
+                    $"</a></span><span class=\"name\"><a href=\"p.php?pid=exame_quote&symbol={_abbreviation[i]}\">");
 
+                var sublockVariation = _scrapParser.ScrapBlockPage(
+                    blockMarkets, "<td class=\"info_perc\">",
+                    "<br>");
+
+                worldMarket.Variation = _scrapParser.ScrapBlockPage(
+                    sublockVariation, "'>",
+                    "</span>");
+
+                lstWorldMarket.Add(worldMarket);
+            }
             return lstWorldMarket;
         }
     }
