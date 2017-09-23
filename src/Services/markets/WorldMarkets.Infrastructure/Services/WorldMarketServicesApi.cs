@@ -27,5 +27,24 @@ namespace Services.markets.WorldMarkets.Infrastructure
             }
             return "";
         }
+
+        public async Task<string> GetPagesLarger()
+        {
+            try
+            {
+                _httpClient = new HttpClient();
+                var response = await _httpClient.GetAsync("https://exame.advfn.com/p.php?pid=exame_toplist&tl=1&market=BOV");
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    return response.Content.ReadAsStringAsync().Result;
+                }
+            }
+            catch (Exception ex)
+            {
+                return "";
+            }
+            return "";
+        }
+
     }
 }

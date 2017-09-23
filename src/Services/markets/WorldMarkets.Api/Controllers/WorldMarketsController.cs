@@ -14,5 +14,6 @@ namespace Services.markets.WorldMarkets.Api.Controllers
             var values = await _worldService.GetValuesWorldMarkets();
             return Ok(values);
         }
+       
     }
 }
