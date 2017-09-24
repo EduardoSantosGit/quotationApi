@@ -17,12 +17,23 @@
             return block;
         }
 
-        public string ClippingBlock(string block, string indexOn, string indexLast)
+        public string ClippingBlock(string block, string indexOn, string indexLast, 
+            int ignoreCharacterIndex = 0, int ignoreCharacterLast = 0)
         {
             var firstIndex = block.IndexOf(indexOn);
             var lastIndex = block.IndexOf(indexLast);
+
+            if (ignoreCharacterIndex != 0)
+            {
+                firstIndex = firstIndex + ignoreCharacterIndex;
+            }
+            if (ignoreCharacterLast != 0)
+            {
+                lastIndex = lastIndex + ignoreCharacterLast;
+            }
+
             var count = lastIndex - firstIndex;
-            var resultBlock = block.Remove(firstIndex, count);
+            var resultBlock = block.Substring(firstIndex, count);
             return resultBlock;
         }
     }

@@ -13,6 +13,11 @@ namespace Services.markets.WorldMarkets.Domain.Services
         private readonly ScrapParser _scrapParser;
         private WorldMarketServicesApi _worldMarketServicesApi;
 
+        public GreaterVariantsServiceScrap()
+        {
+            _scrapParser = new ScrapParser();
+        }
+
         public async Task<string> GetBlockGreaterHigh()
         {
             _worldMarketServicesApi = new WorldMarketServicesApi();
@@ -27,13 +32,15 @@ namespace Services.markets.WorldMarkets.Domain.Services
 
         public async Task<string> GetListGreatersHigh(string block)
         {
-
             var greatersVariants = new List<GreaterVariants>();
 
-            
+            var trs = _scrapParser.ScrapBlockPage(block, "</div></th></tr><tr><td class",
+                    "</span></div></td></tr>");
 
+            var trs2 = _scrapParser.ClippingBlock(block, "</div></th></tr><tr><td class",
+                    "</span></div></td></tr>");
 
-            return "";
+            return trs;
         }
 
     }
