@@ -23,17 +23,19 @@
             var firstIndex = block.IndexOf(indexOn);
             var lastIndex = block.IndexOf(indexLast);
 
+            lastIndex = lastIndex + indexLast.Length;
+
             if (ignoreCharacterIndex != 0)
             {
                 firstIndex = firstIndex + ignoreCharacterIndex;
             }
             if (ignoreCharacterLast != 0)
             {
-                lastIndex = lastIndex + ignoreCharacterLast;
+                lastIndex = lastIndex - ignoreCharacterLast;
             }
 
             var count = lastIndex - firstIndex;
-            var resultBlock = block.Substring(firstIndex, count);
+            var resultBlock = block.Remove(firstIndex, count);
             return resultBlock;
         }
     }

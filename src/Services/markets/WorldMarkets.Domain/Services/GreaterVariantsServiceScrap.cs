@@ -30,17 +30,34 @@ namespace Services.markets.WorldMarkets.Domain.Services
             return blockLarger;
         }
 
-        public async Task<string> GetListGreatersHigh(string block)
+        public async Task<List<GreaterVariants>> GetListGreatersHigh(string block)
         {
-            var greatersVariants = new List<GreaterVariants>();
+            var lstGreatersVariants = new List<GreaterVariants>();
+           
+            var blockVariant = block;
 
-            var trs = _scrapParser.ScrapBlockPage(block, "</div></th></tr><tr><td class",
+            for(var i = 0; i < 60; i++)
+            {
+                var greatersVariants = new GreaterVariants();
+
+                greatersVariants.Name = _scrapParser.ScrapBlockPage(blockVariant, "</div></th></tr><tr><td class",
                     "</span></div></td></tr>");
 
-            var trs2 = _scrapParser.ClippingBlock(block, "</div></th></tr><tr><td class",
-                    "</span></div></td></tr>");
+                blockVariant = _scrapParser.ClippingBlock(blockVariant, "</div></th></tr><tr><td class",
+                        "</span></div></td></tr>", 16);
 
-            return trs;
+                lstGreatersVariants.Add(greatersVariants);
+            }
+            
+            return lstGreatersVariants;
+        }
+
+        public async Task<GreaterVariants> GetParseGreaterVariants(string line)
+        {
+
+
+
+            return null;
         }
 
     }
