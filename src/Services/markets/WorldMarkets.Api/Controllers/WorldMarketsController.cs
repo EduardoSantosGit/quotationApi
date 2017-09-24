@@ -11,7 +11,9 @@ namespace Services.markets.WorldMarkets.Api.Controllers
         public async Task<IActionResult> GetWorldsMarkets()
         {
             var _worldService = new WorldMarketsService();
+            var _greaterVariants = new GreaterVariantsService();
             var values = await _worldService.GetValuesWorldMarkets();
+            var list = await _greaterVariants.GetValuesGreaterVariants();
             return Ok(values);
         }
        
