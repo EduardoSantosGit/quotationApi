@@ -196,6 +196,19 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "WorldMarkets.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WorldMarkets.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WorldMarkets.Domain.dll": {}
+        }
       }
     }
   },
@@ -656,11 +669,17 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "WorldMarkets.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WorldMarkets.Domain/WorldMarkets.Domain.csproj",
+      "msbuildProject": "../WorldMarkets.Domain/WorldMarkets.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "WorldMarkets.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -673,11 +692,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\markets\\WorldMarkets.Infrastructure\\WorldMarkets.Infrastructure.csproj",
+      "projectUniqueName": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Infrastructure\\WorldMarkets.Infrastructure.csproj",
       "projectName": "WorldMarkets.Infrastructure",
-      "projectPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\markets\\WorldMarkets.Infrastructure\\WorldMarkets.Infrastructure.csproj",
+      "projectPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Infrastructure\\WorldMarkets.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\markets\\WorldMarkets.Infrastructure\\obj\\",
+      "outputPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -695,7 +714,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Domain\\WorldMarkets.Domain.csproj": {
+              "projectPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Domain\\WorldMarkets.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

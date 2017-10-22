@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -40,6 +49,18 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "LightInject/5.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/LightInject.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/LightInject.dll": {}
         }
       },
       "Microsoft.ApplicationInsights/2.4.0": {
@@ -4732,6 +4753,22 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Unity/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        }
+      },
       "WindowsAzure.Storage/8.1.4": {
         "type": "package",
         "dependencies": {
@@ -4751,8 +4788,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.App": "2.0.0",
-          "WorldMarkets.Infrastructure": "1.0.0"
+          "Microsoft.NETCore.App": "2.0.0"
         },
         "compile": {
           "bin/placeholder/WorldMarkets.Domain.dll": {}
@@ -4765,7 +4801,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
-          "Microsoft.NETCore.App": "2.0.0"
+          "Microsoft.NETCore.App": "2.0.0",
+          "WorldMarkets.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/WorldMarkets.Infrastructure.dll": {}
@@ -4777,6 +4814,18 @@
     }
   },
   "libraries": {
+    "CommonServiceLocator/1.3.0": {
+      "sha512": "fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==",
+      "type": "package",
+      "path": "commonservicelocator/1.3.0",
+      "files": [
+        "commonservicelocator.1.3.0.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.pdb"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -4793,6 +4842,20 @@
         "runtimes/win-arm/native/libuv.dll",
         "runtimes/win-x64/native/libuv.dll",
         "runtimes/win-x86/native/libuv.dll"
+      ]
+    },
+    "LightInject/5.1.0": {
+      "sha512": "T7kWnRa3PNWUVvuCnxS1qqUZpMgPdYN9g5apZIHRdgkA7mSss5ujAREvXRnV23ubHYgocw45fWheEYvkoznwZw==",
+      "type": "package",
+      "path": "lightinject/5.1.0",
+      "files": [
+        "lib/net452/LightInject.dll",
+        "lib/net46/LightInject.dll",
+        "lib/netstandard1.1/LightInject.dll",
+        "lib/netstandard1.3/LightInject.dll",
+        "lib/netstandard1.6/LightInject.dll",
+        "lightinject.5.1.0.nupkg.sha512",
+        "lightinject.nuspec"
       ]
     },
     "Microsoft.ApplicationInsights/2.4.0": {
@@ -12530,6 +12593,33 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Unity/4.0.1": {
+      "sha512": "FQxLlryE47Y5xY7wJfToUrwtyLsgNJK0jK6sPfNC3YUsjzSX7ILXLA4EX8zVxFPOaIMTJBXRIKrnQ/lsECLufg==",
+      "type": "package",
+      "path": "unity/4.0.1",
+      "files": [
+        "UnityConfiguration30.xsd",
+        "lib/net45/Microsoft.Practices.Unity.Configuration.XML",
+        "lib/net45/Microsoft.Practices.Unity.Configuration.dll",
+        "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.XML",
+        "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll",
+        "lib/net45/Microsoft.Practices.Unity.dll",
+        "lib/net45/Microsoft.Practices.Unity.xml",
+        "lib/portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10/Microsoft.Practices.Unity.dll",
+        "lib/portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10/Microsoft.Practices.Unity.xml",
+        "lib/win8/Microsoft.Practices.Unity.RegistrationByConvention.XML",
+        "lib/win8/Microsoft.Practices.Unity.RegistrationByConvention.dll",
+        "lib/win8/Microsoft.Practices.Unity.RegistrationByConvention.pri",
+        "lib/win8/Microsoft.Practices.Unity.dll",
+        "lib/win8/Microsoft.Practices.Unity.xml",
+        "lib/wp80/Microsoft.Practices.Unity.RegistrationByConvention.XML",
+        "lib/wp80/Microsoft.Practices.Unity.RegistrationByConvention.dll",
+        "lib/wp80/Microsoft.Practices.Unity.dll",
+        "lib/wp80/Microsoft.Practices.Unity.xml",
+        "unity.4.0.1.nupkg.sha512",
+        "unity.nuspec"
+      ]
+    },
     "WindowsAzure.Storage/8.1.4": {
       "sha512": "W6ZZ0/o7+3Qb77mRAQyLjPudHG3OMeeQ4p9yY13PUdJArmRCx2cLMm5F4tpIjJXxzHC0ew0oK7DMDGILMdfCnw==",
       "type": "package",
@@ -12565,9 +12655,12 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "LightInject >= 5.1.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "WorldMarkets.Domain >= 1.0.0"
+      "Unity >= 4.0.1",
+      "WorldMarkets.Domain >= 1.0.0",
+      "WorldMarkets.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12580,11 +12673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\markets\\WorldMarkets.Api\\WorldMarkets.Api.csproj",
+      "projectUniqueName": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Api\\WorldMarkets.Api.csproj",
       "projectName": "WorldMarkets.Api",
-      "projectPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\markets\\WorldMarkets.Api\\WorldMarkets.Api.csproj",
+      "projectPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Api\\WorldMarkets.Api.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\markets\\WorldMarkets.Api\\obj\\",
+      "outputPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12603,8 +12696,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\markets\\WorldMarkets.Domain\\WorldMarkets.Domain.csproj": {
-              "projectPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\markets\\WorldMarkets.Domain\\WorldMarkets.Domain.csproj"
+            "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Domain\\WorldMarkets.Domain.csproj": {
+              "projectPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Domain\\WorldMarkets.Domain.csproj"
+            },
+            "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Infrastructure\\WorldMarkets.Infrastructure.csproj": {
+              "projectPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\markets\\WorldMarkets.Infrastructure\\WorldMarkets.Infrastructure.csproj"
             }
           }
         }
@@ -12618,6 +12714,14 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "LightInject": {
+            "target": "Package",
+            "version": "5.1.0"
+          },
+          "Unity": {
+            "target": "Package",
+            "version": "4.0.1"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
@@ -12635,5 +12739,27 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CommonServiceLocator 1.3.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CommonServiceLocator",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Unity 4.0.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Unity",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.0"
+      ]
+    }
+  ]
 }

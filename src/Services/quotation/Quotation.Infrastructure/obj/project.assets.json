@@ -673,11 +673,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\Quotation.Infrastructure.csproj",
+      "projectUniqueName": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\Quotation.Infrastructure.csproj",
       "projectName": "Quotation.Infrastructure",
-      "projectPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\Quotation.Infrastructure.csproj",
+      "projectPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\Quotation.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\obj\\",
+      "outputPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -692,11 +692,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\quotation\\Quotation.Domain\\Quotation.Domain.csproj",
+      "projectUniqueName": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\quotation\\Quotation.Domain\\Quotation.Domain.csproj",
       "projectName": "Quotation.Domain",
-      "projectPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\quotation\\Quotation.Domain\\Quotation.Domain.csproj",
+      "projectPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\quotation\\Quotation.Domain\\Quotation.Domain.csproj",
       "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
-      "outputPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\quotation\\Quotation.Domain\\obj\\",
+      "outputPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\quotation\\Quotation.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -715,8 +715,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\Quotation.Infrastructure.csproj": {
-              "projectPath": "C:\\works\\projetos\\dotnet\\quotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\Quotation.Infrastructure.csproj"
+            "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\Quotation.Infrastructure.csproj": {
+              "projectPath": "C:\\works\\projetos\\dotnet\\QuotationApi\\src\\Services\\quotation\\Quotation.Infrastructure\\Quotation.Infrastructure.csproj"
             }
           }
         }

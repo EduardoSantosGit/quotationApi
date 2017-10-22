@@ -20,3 +20,5 @@ C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastr
 C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.AssemblyInfo.cs
 C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.dll
 C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Infrastructure\obj\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.pdb
+C:\works\projetos\dotnet\QuotationApi\src\Services\markets\WorldMarkets.Infrastructure\bin\Debug\netcoreapp2.0\WorldMarkets.Domain.dll
+C:\works\projetos\dotnet\QuotationApi\src\Services\markets\WorldMarkets.Infrastructure\bin\Debug\netcoreapp2.0\WorldMarkets.Domain.pdb

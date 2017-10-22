@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="LightInject" Version="5.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Unity" Version="4.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WorldMarkets.Domain\WorldMarkets.Domain.csproj" />
+    <ProjectReference Include="..\WorldMarkets.Infrastructure\WorldMarkets.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

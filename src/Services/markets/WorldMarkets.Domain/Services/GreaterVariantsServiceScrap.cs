@@ -1,26 +1,28 @@
 ﻿using Services.markets.WorldMarkets.Domain.Common;
 using Services.markets.WorldMarkets.Domain.Models;
-using Services.markets.WorldMarkets.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using WorldMarkets.Domain.Interfaces;
 
 namespace Services.markets.WorldMarkets.Domain.Services
 {
     public class GreaterVariantsServiceScrap
     {
         private readonly ScrapParser _scrapParser;
-        private WorldMarketServicesApi _worldMarketServicesApi;
+        private readonly IWorldMarketServicesApi _worldMarketServicesApi;
 
-        public GreaterVariantsServiceScrap()
-        {
-            _scrapParser = new ScrapParser();
+        public GreaterVariantsServiceScrap(
+            IWorldMarketServicesApi worldMarketServicesApi,
+            ScrapParser scrapParser)
+        {           
+            _worldMarketServicesApi = worldMarketServicesApi;
+            _scrapParser = scrapParser;
         }
 
         public async Task<string> GetBlockGreaterHigh()
         {
-            _worldMarketServicesApi = new WorldMarketServicesApi();
             var html = await _worldMarketServicesApi.GetPagesLarger();
 
             var blockLarger =
@@ -33,9 +35,13 @@ namespace Services.markets.WorldMarkets.Domain.Services
         public async Task<List<GreaterVariants>> GetListGreatersHigh(string block)
         {
             var lstGreatersVariants = new List<GreaterVariants>();
-           
-            var blockVariant = block;
+            
+            var blockVariant = block.Split("<td>");
 
+
+            var a = blockVariant;
+
+            /*
             for(var i = 0; i < 60; i++)
             {
                 var greatersVariants = new GreaterVariants();
@@ -49,13 +55,17 @@ namespace Services.markets.WorldMarkets.Domain.Services
                 lstGreatersVariants.Add(greatersVariants);
             }
             
-            return lstGreatersVariants;
+            return lstGreatersVariants;*/
+            return null;
         }
 
         public async Task<GreaterVariants> GetParseGreaterVariants(string line)
         {
-
-
+            var greatersVariants = new GreaterVariants();
+            var blockId = _scrapParser.ScrapBlockPage(line, "=\"align_center width",
+                    "<td><div class=");
+            greatersVariants.Id = Convert.ToDouble(
+                _scrapParser.ScrapBlockPage(line, "\">", "<td>"));
 
             return null;
         }

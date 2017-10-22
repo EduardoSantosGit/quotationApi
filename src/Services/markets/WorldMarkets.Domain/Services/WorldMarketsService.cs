@@ -10,9 +10,13 @@ namespace Services.markets.WorldMarkets.Domain.Services
     {
         private WorldMarketsServiceScrap _worldMarketsServiceScrap;
 
+        public WorldMarketsService(
+            WorldMarketsServiceScrap worldMarketsServiceScrap)
+        {
+            _worldMarketsServiceScrap = worldMarketsServiceScrap;
+        }
         public async Task<List<WorldMarket>> GetValuesWorldMarkets()
         {
-            _worldMarketsServiceScrap = new WorldMarketsServiceScrap();
             var block = await _worldMarketsServiceScrap.GetScrapWorldMarket();
             var index = _worldMarketsServiceScrap.GetValuesIndexParents(block);
             return index;

@@ -7,27 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "WorldMarkets.Domain/1.0.0": {
-        "dependencies": {
-          "WorldMarkets.Infrastructure": "1.0.0"
-        },
         "runtime": {
           "WorldMarkets.Domain.dll": {}
-        }
-      },
-      "WorldMarkets.Infrastructure/1.0.0": {
-        "runtime": {
-          "WorldMarkets.Infrastructure.dll": {}
         }
       }
     }
   },
   "libraries": {
     "WorldMarkets.Domain/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "WorldMarkets.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,22 +1,25 @@
 ﻿using Services.markets.WorldMarkets.Domain.Common;
 using Services.markets.WorldMarkets.Domain.Models;
-using Services.markets.WorldMarkets.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using WorldMarkets.Domain.Interfaces;
 
 namespace Services.markets.WorldMarkets.Domain.Services
 {
     public class WorldMarketsServiceScrap
     {
         private readonly ScrapParser _scrapParser;
-        private WorldMarketServicesApi _worldMarketServicesApi;
+        private IWorldMarketServicesApi _worldMarketServicesApi;
         private readonly List<string> _abbreviation;
 
-        public WorldMarketsServiceScrap()
+        public WorldMarketsServiceScrap(
+            IWorldMarketServicesApi worldMarketServicesApi,
+            ScrapParser scrapParser)
         {
-            _scrapParser = new ScrapParser();
+            _scrapParser = scrapParser;
+            _worldMarketServicesApi = worldMarketServicesApi;
             _abbreviation = new List<string>(new string[] {
                 "BOV^IBOV", "DJI^I\\DJI", "NI^I\\COMP", "FT^UKX", "DBI^DAX",
             "EU^PX1", "EU^N100", "BITI^FTSEMIB", "NIK^N225"});
@@ -24,7 +27,6 @@ namespace Services.markets.WorldMarkets.Domain.Services
 
         public async Task<string> GetScrapWorldMarket()
         {
-            _worldMarketServicesApi = new WorldMarketServicesApi();
             var html = await _worldMarketServicesApi.GetPageWorldMarkets();
 
             var blockMarket =

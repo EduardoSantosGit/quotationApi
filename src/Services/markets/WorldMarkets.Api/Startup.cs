@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Services.markets.WorldMarkets.Configure;
 
 namespace Services.markets.WorldMarkets.Api
 {
@@ -24,6 +25,9 @@ namespace Services.markets.WorldMarkets.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            var container = InjectionDependency.ConfigureService();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
