@@ -13,11 +13,6 @@ C:\works\projetos\dotnet\quotationApi\WorldMarkets.Api\obj\Debug\netcoreapp2.0\W
 C:\works\projetos\dotnet\quotationApi\WorldMarkets.Api\obj\Debug\netcoreapp2.0\WorldMarkets.Api.AssemblyInfo.cs
 C:\works\projetos\dotnet\quotationApi\WorldMarkets.Api\obj\Debug\netcoreapp2.0\WorldMarkets.Api.dll
 C:\works\projetos\dotnet\quotationApi\WorldMarkets.Api\obj\Debug\netcoreapp2.0\WorldMarkets.Api.pdb
-C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\WorldMarkets.Api.deps.json
-C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\WorldMarkets.Api.runtimeconfig.json
-C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\WorldMarkets.Api.runtimeconfig.dev.json
-C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\WorldMarkets.Api.dll
-C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\WorldMarkets.Api.pdb
 C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\WorldMarkets.Domain.dll
 C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\WorldMarkets.Infrastructure.dll
 C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\WorldMarkets.Domain.pdb
@@ -26,5 +21,10 @@ C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\obj\
 C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\obj\Debug\netcoreapp2.0\WorldMarkets.Api.csproj.CoreCompileInputs.cache
 C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\obj\Debug\netcoreapp2.0\WorldMarkets.Api.AssemblyInfoInputs.cache
 C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\obj\Debug\netcoreapp2.0\WorldMarkets.Api.AssemblyInfo.cs
-C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\obj\Debug\netcoreapp2.0\WorldMarkets.Api.dll
-C:\works\projetos\dotnet\quotationApi\src\Services\markets\WorldMarkets.Api\obj\Debug\netcoreapp2.0\WorldMarkets.Api.pdb
+C:\works\projetos\dotnet\QuotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\Quotation.Services.markets.WorldMarkets.deps.json
+C:\works\projetos\dotnet\QuotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\Quotation.Services.markets.WorldMarkets.runtimeconfig.json
+C:\works\projetos\dotnet\QuotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\Quotation.Services.markets.WorldMarkets.runtimeconfig.dev.json
+C:\works\projetos\dotnet\QuotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\Quotation.Services.markets.WorldMarkets.dll
+C:\works\projetos\dotnet\QuotationApi\src\Services\markets\WorldMarkets.Api\bin\Debug\netcoreapp2.0\Quotation.Services.markets.WorldMarkets.pdb
+C:\works\projetos\dotnet\QuotationApi\src\Services\markets\WorldMarkets.Api\obj\Debug\netcoreapp2.0\Quotation.Services.markets.WorldMarkets.dll
+C:\works\projetos\dotnet\QuotationApi\src\Services\markets\WorldMarkets.Api\obj\Debug\netcoreapp2.0\Quotation.Services.markets.WorldMarkets.pdb

@@ -63,6 +63,19 @@
           "lib/netstandard1.6/LightInject.dll": {}
         }
       },
+      "LightInject.Microsoft.DependencyInjection/2.0.5": {
+        "type": "package",
+        "dependencies": {
+          "LightInject": "5.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/LightInject.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/LightInject.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Microsoft.ApplicationInsights/2.4.0": {
         "type": "package",
         "dependencies": {
@@ -4856,6 +4869,17 @@
         "lib/netstandard1.6/LightInject.dll",
         "lightinject.5.1.0.nupkg.sha512",
         "lightinject.nuspec"
+      ]
+    },
+    "LightInject.Microsoft.DependencyInjection/2.0.5": {
+      "sha512": "l/+07PeCY4/liH0m7OZmzeFen5xoorA9uzb8fvLOrXvxTpD4oH/lueyzBSsF4VUQjAIBKcBPx0NX7QRKwF7gEw==",
+      "type": "package",
+      "path": "lightinject.microsoft.dependencyinjection/2.0.5",
+      "files": [
+        "lib/netstandard1.1/LightInject.Microsoft.DependencyInjection.dll",
+        "lib/netstandard2.0/LightInject.Microsoft.DependencyInjection.dll",
+        "lightinject.microsoft.dependencyinjection.2.0.5.nupkg.sha512",
+        "lightinject.microsoft.dependencyinjection.nuspec"
       ]
     },
     "Microsoft.ApplicationInsights/2.4.0": {
@@ -12656,6 +12680,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "LightInject >= 5.1.0",
+      "LightInject.Microsoft.DependencyInjection >= 2.0.5",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
       "Unity >= 4.0.1",
@@ -12730,6 +12755,10 @@
           "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
+          },
+          "LightInject.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "2.0.5"
           }
         },
         "imports": [

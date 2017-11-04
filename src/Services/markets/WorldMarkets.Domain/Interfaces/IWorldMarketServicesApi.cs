@@ -8,6 +8,5 @@ namespace WorldMarkets.Domain.Interfaces
     public interface IWorldMarketServicesApi
     {
         Task<string> GetPageWorldMarkets();
-        Task<string> GetPagesLarger();
     }
 }

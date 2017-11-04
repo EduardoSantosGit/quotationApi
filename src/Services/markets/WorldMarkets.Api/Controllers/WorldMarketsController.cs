@@ -15,12 +15,10 @@ namespace Services.markets.WorldMarkets.Api.Controllers
         }
 
         [HttpGet("world")]
-        public async Task<IActionResult> GetWorldsMarkets()
+        public async Task<JsonResult> GetWorldsMarkets()
         {
-            //var _greaterVariants = new GreaterVariantsService();
-            //var values = await _worldService.GetValuesWorldMarkets();
-            //var list = await _greaterVariants.GetValuesGreaterVariants();
-            return Ok("");
+            var values = await _worldService.GetValuesWorldMarkets();            
+            return Json(values);
         }
        
     }

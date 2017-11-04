@@ -18,11 +18,8 @@ namespace Services.markets.WorldMarkets.Configure
         {
             System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("pt-BR");
 
-            var container = new ServiceContainer();
-
-            container.RegisterInstance(
-                new GreaterVariantsServiceScrap(new WorldMarketServicesApi(), new ScrapParser())
-            );
+            var containerOptions = new ContainerOptions { EnablePropertyInjection = false };
+            var container = new ServiceContainer(containerOptions);
 
             container.RegisterInstance(
                 new WorldMarketsServiceScrap(new WorldMarketServicesApi(), new ScrapParser())
@@ -33,13 +30,10 @@ namespace Services.markets.WorldMarkets.Configure
             );
 
             container.RegisterInstance(
-                new GreaterVariantsService(container.GetInstance<GreaterVariantsServiceScrap>())
-            );
-            /*
-            container.RegisterInstance(
                 new WorldMarketsController(container.GetInstance<WorldMarketsService>())
-            );*/
+            );
 
+            container.ScopeManagerProvider = new PerLogicalCallContextScopeManagerProvider();
             return container;
         }
 
