@@ -1,8 +1,0 @@
-/home/eduardo/projetos/dotnet/QuotationApi/QuotationApi/bin/Debug/netcoreapp1.1/QuotationApi.deps.json
-/home/eduardo/projetos/dotnet/QuotationApi/QuotationApi/bin/Debug/netcoreapp1.1/QuotationApi.runtimeconfig.json
-/home/eduardo/projetos/dotnet/QuotationApi/QuotationApi/bin/Debug/netcoreapp1.1/QuotationApi.runtimeconfig.dev.json
-/home/eduardo/projetos/dotnet/QuotationApi/QuotationApi/bin/Debug/netcoreapp1.1/QuotationApi.dll
-/home/eduardo/projetos/dotnet/QuotationApi/QuotationApi/bin/Debug/netcoreapp1.1/QuotationApi.pdb
-/home/eduardo/projetos/dotnet/QuotationApi/QuotationApi/obj/Debug/netcoreapp1.1/QuotationApi.AssemblyInfo.cs
-/home/eduardo/projetos/dotnet/QuotationApi/QuotationApi/obj/Debug/netcoreapp1.1/QuotationApi.dll
-/home/eduardo/projetos/dotnet/QuotationApi/QuotationApi/obj/Debug/netcoreapp1.1/QuotationApi.pdb
